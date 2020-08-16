@@ -15,17 +15,19 @@ git filter-branch --force --index-filter \
 'git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA' \
 --prune-empty --tag-name-filter cat -- --all
 ```
-Your need to push force & tag again history commit
+You need to push force & tag again history commit
 ```
 git push origin --force --all
 git push origin --force --tags
 ```
 
-Important after when remove file secret on repo, add it in ``` .gitignore``` 
+Important after when removing file secret on the repo, add it in .gitignore
+
 
 ### Delete Github Cached View
 
 
-
+My ref:
+[BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
 
 
